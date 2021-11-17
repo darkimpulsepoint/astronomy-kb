@@ -1,0 +1,66 @@
+sun<-sun_system; concept_star;
+ => nrel_main_idtf: 
+            [Солнце] (* <-lang_ru;; *);
+	    [Sun] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание солнца] (* <-lang_ru;; *);
+		    [Description of sun](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Солнце — одна из звёзд нашей Галактики (Млечный Путь) и единственная звезда Солнечной системы. Вокруг Солнца обращаются другие объекты этой системы: планеты и их спутники, карликовые планеты и их спутники, астероиды, метеороиды, кометы и космическая пыль.] (* <-lang_ru;; *);
+		    	[The Sun is one of the stars in our Galaxy (Milky Way) and the only star in the Solar System. Other objects of this system revolve around the Sun: planets and their satellites, dwarf planets and their satellites, asteroids, meteoroids, comets and cosmic dust.](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	4.83;
+
+=>nrel_diametr:
+	1.39x10e9m;
+	
+=>nrel_weight:
+	1.99x10e30kg;
+
+=>nrel_density:
+	1.409g_cm3;	
+
+=>nrel_temperature:
+	5780K;
+
+=>nrel_volume:
+	1.409x10e27m3;
+
+=>nrel_speed_about_center_of_galaxy:
+	2.2x10e5m_s;		
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Солнце)](*<-lang_ru;;*);
+		[Pic. (Sun)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/sun.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Солнце)](*<- lang_ru;; *);
+		[Stat.(about Sun)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Солнце — ближайшая к Земле звезда](*<- lang_ru;; *);
+			[The sun is the closest star to Earth](*<- lang_en;; *);;
+		*);;
+	*);;

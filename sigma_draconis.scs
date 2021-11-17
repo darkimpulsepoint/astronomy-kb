@@ -1,0 +1,63 @@
+sigma_draconis<-constellation_draco; concept_star;
+ => nrel_main_idtf: 
+            [Сигма Дракона] (* <-lang_ru;; *);
+	    [Sigma Draconis] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Сигмы Дракона] (* <-lang_ru;; *);
+		    [Description of Sigma Draconis](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Сигма Дракона (σ Дракона, лат. Sigma Draconis) — одиночная звезда в созвездии Дракон на расстоянии около 19 световых лет от Солнца] (* <-lang_ru;; *);
+		    	[Sigma Draconis (σ Draconis, Latin Sigma Draconis) is a single star in the constellation Draconis at a distance of about 19 light years from the Sun](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	5.89;
+
+=>nrel_diametr:
+	1.08x10e9m;
+	
+=>nrel_weight:
+	1.73x10e30kg;
+
+=>nrel_density:
+	2.59g_cm3;	
+
+=>nrel_temperature:
+	5299K;
+
+=>nrel_volume:
+	6.64x10e26m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сигма Дракона)](*<-lang_ru;;*);
+		[Pic. (Sigma Draconis)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/sigma_draconis.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Сигме Дракона)](*<- lang_ru;; *);
+		[Stat.(about Sigma Draconis)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Тяжёлых элементов в звезде несколько меньше, чем в Солнце (56—59 % солнечной металличности)](*<- lang_ru;; *);
+			[There are slightly less heavy elements in the star than in the Sun (56-59% of the solar metallicity)](*<- lang_en;; *);;
+		*);;
+	*);;

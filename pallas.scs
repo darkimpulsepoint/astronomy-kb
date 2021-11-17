@@ -1,0 +1,63 @@
+asteroid_pallas<-concept_asteroid;
+ => nrel_main_idtf: 
+            [Паллада] (* <-lang_ru;; *);
+	    [Pallas] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Паллады] (* <-lang_ru;; *);
+		    [Description of Pallas](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Паллада - второй открытый астероид, относиться к главному поясу астероидов] (* <-lang_ru;; *);
+		    	[Pallas is the second discovered asteroid, belongs to the main asteroid belt](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	4.13;
+
+=>nrel_diametr:
+	5.12x10e5m;
+	
+=>nrel_weight:
+	2.11x10e20kg;
+
+=>nrel_density:
+	3g_cm3;	
+
+=>nrel_temperature:
+	164K;
+
+=>nrel_volume:
+	7.03x10e16m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Паллада)](*<-lang_ru;;*);
+		[Pic. (Pallas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pallas.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Палладе)](*<- lang_ru;; *);
+		[Stat.(about Pallas)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[По имени астероида Паллада назван химический элемент палладий, открытый в 1803 году английским химиком Вильямом Волластоном.](*<- lang_ru;; *);
+			[The chemical element palladium, discovered in 1803 by the English chemist William Wollaston, is named after the asteroid Pallas.](*<- lang_en;; *);;
+		*);;
+	*);;

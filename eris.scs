@@ -1,0 +1,63 @@
+eris<-sun_system; concept_dwarf_planet;
+ => nrel_main_idtf: 
+            [Эрида] (* <-lang_ru;; *);
+	    [Eris] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Эриды] (* <-lang_ru;; *);
+		    [Description of Eris](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Эрида — вторая по размеру после Плутона, самая массивная и наиболее далёкая от Солнца карликовая планета Солнечной системы.] (* <-lang_ru;; *);
+		    	[Eris is the second largest dwarf planet in the solar system after Pluto, the most massive and farthest from the Sun.](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	minus1.17;
+
+=>nrel_diametr:
+	2.66x10e6m;
+	
+=>nrel_weight:	
+	1.67x10e22kg;
+
+=>nrel_density:
+	2.52g_cm3;	
+
+=>nrel_temperature:
+	20K;
+
+=>nrel_volume:
+	6.63x10e18m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Эрида)](*<-lang_ru;;*);
+		[Pic. (Eris)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/eris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(об Эриде)](*<- lang_ru;; *);
+		[Stat.(about Eris)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[До XXVI Ассамблеи Международного астрономического союза Эрида претендовала на статус десятой планеты](*<- lang_ru;; *);
+			[Before the XXVI Assembly of the International Astronomical Union, Eris claimed the status of the tenth planet](*<- lang_en;; *);;
+		*);;
+	*);;

@@ -1,0 +1,63 @@
+asteroid_vesta<-concept_asteroid;
+ => nrel_main_idtf: 
+            [Веста] (* <-lang_ru;; *);
+	    [Vesta] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Весты] (* <-lang_ru;; *);
+		    [Description of Vesta](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Веста — один из крупнейших астероидов в главном астероидном поясе] (* <-lang_ru;; *);
+		    	[Vesta is one of the largest asteroids in the main asteroid belt](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	3.20;
+
+=>nrel_diametr:
+	5.25x10e5m;
+	
+=>nrel_weight:
+	2.59x10e20kg;
+
+=>nrel_density:
+	3.46g_cm3;	
+
+=>nrel_temperature:
+	170K;
+
+=>nrel_volume:
+	7.49x10e16m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Веста)](*<-lang_ru;;*);
+		[Pic. (Vesta)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vesta.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Весте)](*<- lang_ru;; *);
+		[Stat.(about Vesta)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Среди астероидов занимает первое место по массе и по размеру.](*<- lang_ru;; *);
+			[Among asteroids it ranks first in terms of mass and size.](*<- lang_en;; *);;
+		*);;
+	*);;

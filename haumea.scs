@@ -1,0 +1,63 @@
+haumea<-sun_system; concept_dwarf_planet;
+ => nrel_main_idtf: 
+            [Хаумеа] (* <-lang_ru;; *);
+	    [Haumea] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Хаумеа] (* <-lang_ru;; *);
+		    [Description of Haumea](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Хаумеа — карликовая планета Солнечной системы. Классифицируется как плутоид, транснептуновый объект] (* <-lang_ru;; *);
+		    	[Haumea is a dwarf planet in the solar system. Classified as a plutoid, trans-Neptunian object](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	0.2;
+
+=>nrel_diametr:
+	1.63x10e6m;
+	
+=>nrel_weight:	
+	4.01x10e21kg;
+
+=>nrel_density:
+	2.6g_cm3;	
+
+=>nrel_temperature:
+	50K;
+
+=>nrel_volume:
+	1.54x10e18m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хаумеа)](*<-lang_ru;;*);
+		[Pic. (Haumea)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/haumea.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Хаумее)](*<- lang_ru;; *);
+		[Stat.(about Haumea)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Хаумеа была открыта независимо друг от друга двумя группами астрономов: американской и испанской.](*<- lang_ru;; *);
+			[Haumea was discovered independently by two groups of astronomers: American and Spanish.](*<- lang_en;; *);;
+		*);;
+	*);;

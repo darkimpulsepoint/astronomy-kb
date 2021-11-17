@@ -1,0 +1,63 @@
+jupiter<-sun_system;
+ => nrel_main_idtf: 
+            [Юпитер] (* <-lang_ru;; *);
+	    [Jupiter] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Юпитера] (* <-lang_ru;; *);
+		    [Description of Jupiter](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Юпитер — крупнейшая планета Солнечной системы, пятая по удалённости от Солнца] (* <-lang_ru;; *);
+		    	[Jupiter is the largest planet in the solar system, the fifth farthest from the Sun](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	minus9.4;
+
+=>nrel_diametr:
+	1.39x10e8m;
+	
+=>nrel_weight:
+	1.9x10e27kg;
+
+=>nrel_density:
+	1.33g_cm3;	
+
+=>nrel_temperature:
+	125K;
+
+=>nrel_volume:
+	1.43x10e24m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Юпитер)](*<-lang_ru;;*);
+		[Pic. (Jupiter)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/jupiter.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(об Апофисе)](*<- lang_ru;; *);
+		[Stat.(about Apophis)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Юпитер — самый мощный радиоисточник Солнечной системы в дециметровом — метровом диапазонах длин волн](*<- lang_ru;; *);
+			[Jupiter is the most powerful radio source in the solar system in the decimeter - meter wavelength ranges](*<- lang_en;; *);;
+		*);;
+	*);;

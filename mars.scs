@@ -1,0 +1,64 @@
+mars<-concept_planet;;
+mars<-sun_system;
+ => nrel_main_idtf: 
+            [Марс] (* <-lang_ru;; *);
+	    [Mars] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Марся] (* <-lang_ru;; *);
+		    [Description of Mars](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Марс — четвёртая по удалённости от Солнца и седьмая по размеру планета Солнечной системы] (* <-lang_ru;; *);
+		    	[Mars is the fourth farthest from the Sun and the seventh largest planet in the solar system](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	minus3.11;
+
+=>nrel_diametr:
+	6.67x10e6m;
+	
+=>nrel_weight:
+	6.42x10e23kg;
+
+=>nrel_density:
+	3.93g_cm3;	
+
+=>nrel_temperature:
+	214K;
+
+=>nrel_volume:
+	1.63x10e20m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Марс)](*<-lang_ru;;*);
+		[Pic. (Mars)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/mars.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Марсе)](*<- lang_ru;; *);
+		[Stat.(about Mars)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сила тяжести у поверхности Марса составляет 39,4 % от земной (в 2,5 раза слабее)](*<- lang_ru;; *);
+			[The force of gravity near the surface of Mars is 39.4% of the earth's (2.5 times weaker)](*<- lang_en;; *);;
+		*);;
+	*);;

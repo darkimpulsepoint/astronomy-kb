@@ -1,0 +1,63 @@
+thuban<-constellation_draco; concept_star;
+ => nrel_main_idtf: 
+            [Тубан] (* <-lang_ru;; *);
+	    [Thuban] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Тубана] (* <-lang_ru;; *);
+		    [Description of Thuban](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Тубан — звезда 3-й звездной величины в созвездии Дракона] (* <-lang_ru;; *);
+		    	[Thuban is a 3rd magnitude star in the constellation Draco](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	3.617;
+
+=>nrel_diametr:
+	9.38x10e9m;
+	
+=>nrel_weighttttttttttttt:
+	7.66x10e30kg;
+
+=>nrel_density:
+	0.018g_cm3;	
+
+=>nrel_temperature:
+	9950K;
+
+=>nrel_volume:
+	4.333x10e29m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тубан)](*<-lang_ru;;*);
+		[Pic. (Thuban)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/thuban.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Тубане)](*<- lang_ru;; *);
+		[Stat.(about Thuban)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Находится на расстоянии примерно 270 световых лет от Солнца](*<- lang_ru;; *);
+			[Located approximately 270 light-years from the Sun](*<- lang_en;; *);;
+		*);;
+	*);;

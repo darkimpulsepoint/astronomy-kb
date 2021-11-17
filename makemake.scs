@@ -1,0 +1,63 @@
+makemake<-sun_system; concept_dwarf_planet;
+ => nrel_main_idtf: 
+            [Макемаке] (* <-lang_ru;; *);
+	    [Makemake] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Макемаке] (* <-lang_ru;; *);
+		    [Description of Makemake](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Макемаке — карликовая планета Солнечной системы. Относится к транснептуновым объектам] (* <-lang_ru;; *);
+		    	[Makemake is a dwarf planet in the solar system. Refers to trans-Neptunian objects](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	minus0.44;
+
+=>nrel_diametr:
+	1.48x10e6m;
+	
+=>nrel_weight:	
+	3x10e21kg;
+
+=>nrel_density:
+	1.7g_cm3;	
+
+=>nrel_temperature:
+	33K;
+
+=>nrel_volume:
+	1.5x10e18m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Макемаке)](*<-lang_ru;;*);
+		[Pic. (Makemake)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/makemake.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Макемаке)](*<- lang_ru;; *);
+		[Stat.(about Makemake)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Открывшая объект группа астрономов дала ему прозвище «Пасхальный кролик»](*<- lang_ru;; *);
+			[The group of astronomers who discovered the object gave it the nickname "Easter Bunny"](*<- lang_en;; *);;
+		*);;
+	*);;

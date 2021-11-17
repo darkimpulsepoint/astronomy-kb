@@ -1,0 +1,63 @@
+neptune<-sun_system;
+ => nrel_main_idtf: 
+            [Нептун] (* <-lang_ru;; *);
+	    [Neptune] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Нептуна] (* <-lang_ru;; *);
+		    [Description of Neptune](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Нептун — восьмая и самая дальняя от Солнца планета Солнечной системы.] (* <-lang_ru;; *);
+		    	[Neptune is the eighth and farthest planet from the Sun in the solar system.](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	6.93;
+
+=>nrel_diametr:
+	4.92x10e7m;
+	
+=>nrel_weight:
+	1.02x10e26kg;
+
+=>nrel_density:
+	1.64g_cm3;	
+
+=>nrel_temperature:
+	72K;
+
+=>nrel_volume:
+	6.25x10e22m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Нептун)](*<-lang_ru;;*);
+		[Pic. (Neptune)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/jupiter.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Нептуне)](*<- lang_ru;; *);
+		[Stat.(about Neptune)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Нептун стал первой планетой, открытой благодаря математическим расчётам](*<- lang_ru;; *);
+			[Neptune became the first planet discovered through mathematical calculations](*<- lang_en;; *);;
+		*);;
+	*);;

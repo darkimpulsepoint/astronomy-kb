@@ -1,0 +1,63 @@
+ceres<-concept_dwarf_planet;
+ => nrel_main_idtf: 
+            [Церера] (* <-lang_ru;; *);
+	    [Ceres] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Цереры] (* <-lang_ru;; *);
+		    [Description of Ceres](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Церера — ближайшая к Солнцу и наименьшая среди известных карликовых планет Солнечной системы. Расположена в поясе астероидов] (* <-lang_ru;; *);
+		    	[Ceres is the closest to the Sun and the smallest known dwarf planet in the Solar System. Located in the asteroid belt](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	3.36;
+
+=>nrel_diametr:
+	9.27x10e5m;
+	
+=>nrel_weight:
+	9.39x10e20kg;
+
+=>nrel_density:
+	2.16g_cm3;	
+
+=>nrel_temperature:
+	167K;
+
+=>nrel_volume:
+	4.35x10e17m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Церера)](*<-lang_ru;;*);
+		[Pic. (Ceres)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ceres.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(о Церере)](*<- lang_ru;; *);
+		[Stat.(about Ceres)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Церера является крупнейшим и наиболее массивным телом в поясе астероидов, по размерам превосходит многие крупные спутники планет-гигантов](*<- lang_ru;; *);
+			[Ceres is the largest and most massive body in the asteroid belt, larger than many large satellites of the giant planets](*<- lang_en;; *);;
+		*);;
+	*);;

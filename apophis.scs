@@ -1,0 +1,63 @@
+asteroid_pophis<-concept_asteroid;
+ => nrel_main_idtf: 
+            [Апофис] (* <-lang_ru;; *);
+	    [Apophis] (* <-lang_en;; *);
+		  
+        <- rrel_key_sc_element:...
+            (*
+                => nrel_main_idtf:
+                    [Описание Апофиса] (* <-lang_ru;; *);
+		    [Description of Apophis](*<-lang_en;;*);;
+                <= nrel_sc_text_translation: ...
+                    (*
+                        ->rrel_example:
+			[Апофис — астероид, сближающийся с Землёй, открытый в 2004 году в обсерватории Китт-Пик в Аризоне.] (* <-lang_ru;; *);
+		    	[Apophis is a near-Earth asteroid discovered in 2004 at Kitt Peak Observatory in Arizona.](*<-lang_en;;*);;
+                    *);;
+                    *);
+                    
+=>nrel_absolute_star_magnitude:
+	3.20;
+
+=>nrel_diametr:
+	3.25x10e2m;
+	
+=>nrel_weight:
+	2.7x10e10kg;
+
+=>nrel_density:
+	3.27g_cm3;	
+
+=>nrel_temperature:
+	270K;
+
+=>nrel_volume:
+	8.25x10e6m3;	
+	                    
+<- rrel_key_sc_element:...
+	(*                        
+<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Апофис)](*<-lang_ru;;*);
+		[Pic. (Apophis)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/apophis.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+            *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Утв.(об Апофисе)](*<- lang_ru;; *);
+		[Stat.(about Apophis)](*<- lang_en;; *);;
+	<-statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В результате сближения с Землёй в 2029 году Апофис изменит свою орбиту](*<- lang_ru;; *);
+			[As a result of the approach to Earth in 2029, Apophis will change its orbit.](*<- lang_en;; *);;
+		*);;
+	*);;
